@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	background: url(food3.jpg) !important;
+	background-size: cover !important;
+        background-position: center;
+	background-repeat: no-repeat !important;
+}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea, input[type=date], input[type=number] {
+ 	font-family: Georgia, "Times New Roman", Times, serif;
+	background: rgba(255,255,255,.1);
+	border: none;
+	border-radius: 4px;
+	font-size: 15px;
+	margin: 0;
+	outline: 0;
+	padding: 10px;
+	width: 100%;
+	box-sizing: border-box; 
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box; 
+	background-color: #e8eeef;
+	color:#8a97a0;
+	-webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+	box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+	margin-bottom: 30px;
+}
+
+input[type=text]:focus, select:focus, textarea:focus, input[type=date]:focus, input[type=number]:focus {
+ 	background: #d2d9dd;
+}
+
+input[type=checkbox] {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.container {
+  	max-width: 800px;
+	padding: 10px 20px;
+	background: #f4f7f8;
+	margin: 10px auto;
+	padding: 20px;
+	background: #f4f7f8;
+	border-radius: 8px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.container legend {
+	font-size: 1.4em;
+	margin-bottom: 10px;
+}
+
+.container .number {
+	background: #1abc9c;
+	color: #fff;
+	height: 30px;
+	width: 30px;
+	display: inline-block;
+	font-size: 0.8em;
+	margin-right: 4px;
+	line-height: 30px;
+	text-align: center;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+	border-radius: 15px 15px 15px 0px;
+}
+
+.button {
+	position: relative;
+	display: block;
+	padding: 19px 39px 18px 39px;
+	color: #FFF;
+	margin: 0 auto;
+	background: #1abc9c;
+	font-size: 18px;
+	text-align: center;
+	font-style: normal;
+	width: 100%;
+	border: 1px solid #16a085;
+	border-width: 1px 1px 3px;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+
+.button:hover{
+	background: #109177;
+}
+
+.rq {
+color: red;
+font-size: 10pt;
+}
+
+.header {
+  padding: 5px;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  border:none;
+  /*color:#1abc9c;*/
+  font-size:25px;
+  font-family:"Times New Roman";
+  height:200px; 
+  font-weight:bolder;
+  background-image: url("top1.jpg");
+  background-size: 100% 100% !important;
+  background-position:  center bottom;
+  background-repeat: no-repeat !important;
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <p align=center><br>
+	Thank you for dining with us today!<br>
+	We want to improve your dining experience<br>
+       	Fill out our survey </p>
+</div>
+
+
+<div class="container">
+
+<legend><span class="number">1</span> Customer Survey</legend>
+
+<form name="form1" action="#" onsubmit="required()">
+    
+
+    <label>1. How was the food?</label>       <strong class="rq">*Required </strong>
+    <div class="checkbox">
+    <label>
+    	<input type="checkbox" class="radio" value="1" name="group1" />Very good</label>
+    <label>
+    	<input type="checkbox" class="radio" value="2" name="group1" />Good</label>
+    <label>
+    	<input type="checkbox" class="radio" value="3" name="group1" />Okay</label>
+    <label>
+    	<input type="checkbox" class="radio" value="4" name="group1" />Bad</label>
+    </div>
+
+    <label>2. How was the menu variety?</label> <strong class="rq">*Required </strong>
+    <div class="checkbox">
+    <label>
+    	<input type="checkbox" class="radio" value="1" name="group2" />Very good</label>
+    <label>
+    	<input type="checkbox" class="radio" value="2" name="group2" />Good</label>
+    <label>
+    	<input type="checkbox" class="radio" value="3" name="group2" />Okay</label>
+    <label>
+    	<input type="checkbox" class="radio" value="4" name="group2" />Bad</label>
+    </div>
+
+    <label>3. How was the survice?</label> <strong class="rq">*Required</strong>
+    <div class="checkbox">
+    <label>
+    	<input type="checkbox" class="radio" value="1" name="group3" />Very good</label>
+    <label>
+    	<input type="checkbox" class="radio" value="2" name="group3" />Good</label>
+    <label>
+    	<input type="checkbox" class="radio" value="3" name="group3" />Okay</label>
+    <label>
+    	<input type="checkbox" class="radio" value="4" name="group3" />Bad</label>
+    </div>
+
+    <label>4. How was the atmosphere?</label> <strong class="rq">*Required </strong>
+    <div class="checkbox">
+    <label>
+    	<input type="checkbox" class="radio" value="1" name="group4" />Very good</label>
+    <label>
+    	<input type="checkbox" class="radio" value="2" name="group4" />Good</label>
+    <label>
+    	<input type="checkbox" class="radio" value="3" name="group4" />Okay</label>
+    <label>
+    	<input type="checkbox" class="radio" value="4" name="group4" />Bad</label>
+    </div>
+
+    <label>5. Did you liked our Canteen?</label>  <strong class="rq">*Required</strong>
+    <div class="checkbox">
+    <label>
+    	<input type="checkbox" class="radio" value="1" name="group5" />Very good</label>
+    <label>
+    	<input type="checkbox" class="radio" value="2" name="group5" />Good</label>
+    <label>
+    	<input type="checkbox" class="radio" value="3" name="group5" />Okay</label>
+    <label>
+    	<input type="checkbox" class="radio" value="4" name="group5" />Bad</label>
+    </div>
+
+    <label for="q6">6. What could our canteen improve on?</label>    <strong class="rq">*Required</strong> <br>
+    <textarea id="q6" name="q6" placeholder="Write something.." style="height:100px" required></textarea><br>
+
+    <label for="q7">7. Any other comments/Suggestions?</label><strong class="rq">*Required </strong><br>
+    <textarea id="q7" name="q7" placeholder="Write something.." style="height:100px" required></textarea>
+
+    <legend><span class="number">2</span> Your Information</legend>
+
+    <label for="fname">First Name</label><br>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.." required oninput="validateName();"><br>
+
+    <label for="lname">Last Name</label><br>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.." required oninput="validateLname();"><br>
+
+    <label for="date">Date</label><br>
+    <input type="date" id="date" name="date" required><br>
+
+    <label for="mobile">Mobile</label><br>
+    <input type="number" id="mobile" name="mobile" placeholder="Your Mobile Number.." required onkeyup="check(); return false;"><span id="message"></span><br>
+
+    <label for="email">Email</label><br>
+    <input type="text" id="email" name="email" placeholder="Your Email Id.." required onblur="validateEmail(this);">   <br>
+
+    <input type="submit" value="SUBMIT" id="login-btn" class="button">
+<a href="second.html">Home</a>
+  </form>
+</div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+
+(function() {
+   var today = new Date();
+   var dd = today.getDate();
+   var mm = today.getMonth()+1; //January is 0!
+   var yyyy = today.getFullYear();
+   if(dd<10){
+        dd='0'+dd
+   } 
+   if(mm<10){
+        mm='0'+mm
+   } 
+
+today = yyyy+'-'+mm+'-'+dd;
+document.getElementById("date").setAttribute("max", today);
+
+})();
+
+window.onload = function () {
+
+     
+        var chks = document.getElementsByName("group1");
+        for (var i = 0; i < chks.length; i++) {
+            chks[i].onclick = function () {
+                for (var i = 0; i < chks.length; i++) {
+                    if (chks[i] != this && this.checked) {
+                        chks[i].checked = false;
+                    }
+                }
+            };
+        }
+
+        var chks1 = document.getElementsByName("group2");
+        for (var i = 0; i < chks1.length; i++) {
+            chks1[i].onclick = function () {
+                for (var i = 0; i < chks1.length; i++) {
+                    if (chks1[i] != this && this.checked) {
+                        chks1[i].checked = false;
+                    }
+                }
+            };
+        }
+
+        var chks2 = document.getElementsByName("group3");
+        for (var i = 0; i < chks2.length; i++) {
+            chks2[i].onclick = function () {
+                for (var i = 0; i < chks2.length; i++) {
+                    if (chks2[i] != this && this.checked) {
+                        chks2[i].checked = false;
+                    }
+                }
+            };
+        }
+
+        var chks3 = document.getElementsByName("group4");
+        for (var i = 0; i < chks3.length; i++) {
+            chks3[i].onclick = function () {
+                for (var i = 0; i < chks3.length; i++) {
+                    if (chks3[i] != this && this.checked) {
+                        chks3[i].checked = false;
+                    }
+                }
+            };
+        }
+
+        var chks4 = document.getElementsByName("group5");
+        for (var i = 0; i < chks4.length; i++) {
+            chks4[i].onclick = function () {
+                for (var i = 0; i < chks4.length; i++) {
+                    if (chks4[i] != this && this.checked) {
+                        chks4[i].checked = false;
+                    }
+                }
+            };
+        }
+     
+};
+
+function check()
+{
+
+    var pass1 = document.getElementById('mobile');
+
+
+    var message = document.getElementById('message');
+
+    var goodColor = "#ffffff";
+    var badColor = "#FF9B37";
+
+    if(mobile.value.length!=10){
+
+        mobile.style.backgroundColor = badColor;
+        message.style.color = badColor;
+        message.innerHTML = "required 10 digits, match requested format!"
+	return false;
+    }else{
+	mobile.style.backgroundColor = goodColor;
+        message.style.color = goodColor;
+        message.innerHTML = ""
+	return true;
+    }
+}
+
+function validateEmail(emailField){
+        var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+
+        if (reg.test(emailField.value) == false) 
+        {
+            alert('Invalid Email Address');
+            return false;
+        }
+
+        return true;
+
+}
+
+function validateName(){
+    var textInput = document.getElementById("fname").value;
+
+    textInput = textInput.replace(/[^A-Za-z]/g, "");
+    document.getElementById("fname").value = textInput;
+if (textInput == "") {
+    alert("Name must be filled out");
+    return false;
+}
+
+}
+
+
+function validateLname(){
+    var textInput = document.getElementById("lname").value;
+    textInput = textInput.replace(/[^A-Za-z]/g, "");
+    document.getElementById("lname").value = textInput;
+}
+
+$(document).ready(function () {
+            $("#login-btn").click(function (event) {
+		console.log(check());
+		if(!check()){
+                	event.preventDefault();
+			alert("Please enter valid mobile no");
+		}
+		
+		checked = $("input[name=group1]:checked").length;
+		checked1 = $("input[name=group2]:checked").length;
+		checked2 = $("input[name=group3]:checked").length;
+		checked3 = $("input[name=group4]:checked").length;
+		checked4 = $("input[name=group5]:checked").length;
+		
+		if(!checked) {
+        		alert("You must check at least one checkbox for question 1");
+        		event.preventDefault();
+      		}
+      		if(!checked1) {
+        		alert("You must check at least one checkbox for question 2");
+        		event.preventDefault();
+      		}
+      		if(!checked2) {
+        		alert("You must check at least one checkbox for question 3");
+        		event.preventDefault();
+      		}
+		if(!checked3) {
+        		alert("You must check at least one checkbox for question 4");
+        		event.preventDefault();
+      		}
+      		if(!checked4) {
+        		alert("You must check at least one checkbox for question 5");
+        		event.preventDefault();
+      		}
+                
+            });
+ });
+
+
+</script>
+
+</html>

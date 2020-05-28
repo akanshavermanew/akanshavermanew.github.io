@@ -1,0 +1,24 @@
+h3{
+  font-family: Comics Sans MS; 
+  font-size: 25pt;         
+  font-style: normal; 
+  font-weight: bold; 
+  color:#DB5A3F;
+  text-align: center; 
+  text-decoration: underline
+}
+
+table{
+  font-family: Comics Sans MS; 
+  color:white; 
+  font-size: 11pt; 
+  font-style: normal;
+  font-weight: bold;
+  text-align:; 
+  background-color: #E7B1A0; 
+  border-collapse: collapse; 
+  border: 2px solid navy
+}
+table.inner{
+  border: 0px
+}
